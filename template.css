@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 19px;
+    color: hsl(0, 85%, 72%);
+}
+#wrapper{
+    display: flex;
+    min-width: 780px;
+}
+#left{
+    width: 22%;
+    background-color: #13e39e;
+    min-height: 350px;
+    text-align: center;
+    padding: 10px 5px;
+}
+#left h1{
+    font-size: 18px;
+    color: white;
+}
+#left nav{
+    margin-top: 10px;
+}
+#left nav ul li{
+    list-style-type: none;
+    display: inline;
+    color: white;
+}
+#left nav ul li a{
+    color: yellow;
+    text-decoration: none;
+    border-bottom: 1px dashed yellow;
+}
+#left nav ul li a:hover{
+    border-bottom: 1px dashed rgb(255, 255, 255);
+    color: white;
+}
+#left .box{
+    background-color: #63c9c9;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#left .box h2{
+    background-color: #237b7b;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 8px;
+}
+#left .box ul{
+    padding: 5px;
+    background-color: #588383;
+    margin-top: 5px;
+}
+#left .box ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+#left .box ul li:last-child{
+    margin-bottom: 0;
+}
+#left .box ul li a{
+    text-decoration: none;
+    background-color: #a5d1d1;
+    color: #3a6767;
+    font-size: 14px;
+    display: block;
+    padding: 5px;
+}
+#left .box ul li a:hover{
+    background-color: #75a8a8;
+    color: black;
+}
+#right{
+    width: 78%;
+    background-color: rgb(121, 205, 205);
+    min-height: 350px;
+    padding: 0 20px;
+}
+#right #header{
+    height: 60px;
+    background-image: linear-gradient(hsla(332, 73%, 56%, 0.375), #222a2a);
+    color: rgb(211, 225, 222);
+    border-radius: 8px;
+    text-align:center;
+    font: normal 23px/60px Arial;
+}
+#toolbar{
+    height: 60px;
+    border: 1px solid #c32020;
+    background-color: hsl(62, 58%, 77%);
+    border: 1px solid gray;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#pagination{
+    height: 30px;
+    text-align: center;
+    background-color: #fae6e6;
+    border: 1px solid gray;
+    line-height: 30px;
+}
+#right table{
+    border-collapse: collapse;
+    width: 100%;
+}
+#right table tr th{
+    background-color: hwb(321 33% 15%);
+    color: white;
+    padding: 8px;
+}
+#right table tr td{
+    background-color: rgb(235, 235, 235);
+    color: rgb(49, 49, 49);
+    padding: 5px 8px;
+}
+/*  Hamburger Menu */
+
+#hamburgerMenu{
+    position: relative;
+    top: 20px;
+    display: none;
+}
+#hamburgerMenu #leftMenu{
+    width: 200px; position: absolute; z-index: 100;
+    top: 5px;
+    background-image: linear-gradient(to left, rgb(235, 70, 172), #55ab55);
+}
+#hamburgerMenu #leftMenu ul
+{
+ margin-top: 0%;
+}
+#hamburgerMenu #leftMenu ul li{
+    list-style-type: none;
+    border-bottom: 1px dashed white;
+}
+#hamburgerMenu #leftMenu ul li a{
+    color: white;
+    font: bold 13px sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: block;
+    padding: 8px 10px;
+}
+#hamburgerMenu #leftMenu ul li a:hover{
+    color: yellow;
+    background-image: linear-gradient(to right, #033c03, #bc8ddf);
+}
+#hamburgerMenu #chkMenu{
+    display: none;
+}
+#hamburgerMenu #chkMenu ~ #leftMenu{
+    left: -300px;
+    position: absolute;
+    z-index: 100;
+    top: 30px;
+    transition: all ease-in-out 300ms;
+}
+#hamburgerMenu #chkMenu:checked ~ #leftMenu{
+    left: 0;
+}
+#hamburgerMenu label{ 
+    position: relative; 
+    width: 30px; 
+    height: 20px; 
+    display: block; 
+    background-color: transparent; 
+    left: 10px;
+}
+#hamburgerMenu label #line1{
+    width: 30px; height: 2px; background-color: #ffffff;
+    position: absolute; z-index: 1; top: 0; border-radius: 3px;
+    transition: all ease-in-out 300ms;
+}
+#hamburgerMenu label #line2{
+    width: 30px; height: 2px; background-color: #ffffff;
+    position: absolute; z-index: 1; top: 10px; border-radius: 3px;
+}
+#hamburgerMenu label #line3{
+    transition: all ease-in-out 300ms;
+    width: 30px; height: 2px; background-color: #ffffff;
+    position: absolute; z-index: 1; top: 20px; border-radius: 3px;
+}
+
+#hamburgerMenu #chkMenu:checked ~ label #line2{
+    display: none;
+}
+#hamburgerMenu #chkMenu:checked ~ label #line1{
+    top: 9px;
+    transform: rotate(225deg);
+}
+#hamburgerMenu #chkMenu:checked ~ label #line3{
+    top: 9px;
+    transform: rotate(-225deg);
+}
+
+/* End Hamburger Menu */
+
+
+@media all and (max-width: 900px){
+    #left{ display: none; }
+    #right{  width: 100%; }
+    #hamburgerMenu{ display: block; }
+}

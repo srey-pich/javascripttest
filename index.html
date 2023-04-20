@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asus Homepage</title>
+    <link rel="stylesheet" href="JavasTest.css">
+</head>
+<body id="bodyElemnet">
+    <script> //javascript slider
+        function changeColor(color = 'green') {
+            var body = document.getElementById('bodyElemnet');
+            body.style.backgroundColor = color;
+        }
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+   }
+    </script>
+    <div class='box0'>
+        <div style="display: flex;justify-content: space-between;align-items: center;">
+            <img src="Image/logo_asus.png" width="50px" height="50px">
+            <nav>
+                <ul>
+                    <li><a href="#">Asus Laptop Gaming hi</a>
+                        <ul>
+
+                            <li><a href="#">Developer</a></li>
+                            <li><a href="#">UAT</a></li>
+                            <li><a href="#">Froniter</a></li>
+                            <li><a href="#">Future....</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Producrt</a>
+                        <ul>
+                            <li><a href="#">Computer</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Surface</a></li>
+                            <li><a href="#">Other....</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Support</a>
+                        <ul>
+                            <li><a href="#">Personal & family</a></li>
+                            <li><a href="#">For Education</a></li>
+                            <li><a href="#">For partner</a></li>
+                            <li><a href="#">See all Support....</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Template</a>
+                        <ul>
+                            <li><a href="#">Baby Promotion</a></li>
+                            <li><a href="#">Griant Promotion</a></li>
+                            <li><a href="#">Other Promotion</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Change mode</a>
+                        <ul>
+                            <li> <a href="#" onclick="changeColor('cyan')">cyan</a> </li>
+                            <li><a href="#" onclick="changeColor('yellow')">Yellow</a></li>
+                            <li><a href="#" onclick="changeColor('pink')">pink</a></li>
+                            <li><a href="#" onclick="changeColor('black')">Black</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <a href="https://rog.asus.com/laptops-group/">
+                <button style="border-radius: 2px ; background-color: aqua;">Buy Lience </a></button>
+            <a href="#" style="margin: 0px">
+            </a>
+            <ul style="list-style: none;margin: 0px;">
+                <li style="display: flex; gap: 20px;">
+                    <a href="#">
+                        <div style="display: flex;align-items: center;">
+                            <span><input>Search</input></span>
+                            <img src="./Image/icons8-search-30.png" alt="" width="30px" height="30px">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div style="display: flex;align-items: center;">
+                            <span>Sign In</span>
+                            <img src="./Image/icons8-sign-in-30.png" alt="" width="30px" height="30px">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div style="display: flex;align-items: center;">
+                            <span>Cart</span>
+                            <img src="./Image/icons8-shopping-cart-24.png" alt="" width="30px" height="30px">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./Image/fwebp.webp" width="1470px">
+          <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./Image/kv.webp" width="1470px" height="350px">
+          <div class="text">Asus it your Best choice</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./Image/d1bsu0m-8014057c-795f-4bf0-bffb-4fd408e851c4.jpg" width="1470px" height="350px">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    <div style="display: flex;align-items: center;">
+    </div>
+    <div class="content">
+        <div class="left">
+          <p style="border: 2px solid palevioletred;background-color: darkorchid;"> Monitor</p>
+            <img src="./Image/w692.png" width="200px" height="150px" style="border: 3px solid black;">
+            <p align="middle">My First JavaScript Animation
+                The AMD Ryzen™ 7945HX Processor features the all-new Zen 4 architecture, with a whopping 16
+                cores and AMD’s Precision Boost Overdrive technology, which allows
+                users to overclock and undervolt the processor as they see fit.
+                </p>
+                <a href="http://127.0.0.1:5500/addcart.html"><button class="button button1">Buy </button></a>
+                <a href="http://127.0.0.1:5500/index1.html"><button class="button button2">Read more</button></a>
+        </div>
+        <div class="left">
+            <p style="border: 2px solid palevioletred;background-color: darkorchid;">DeskTop</p>
+            <img src="./Image/fa507rr-hn036w-asus-tuf-gaming-a15-laptop.jpg" width="200px" height="150px"
+                style="border: 3px solid black;">
+            <p align="middle">My First JavaScript Animation
+                The AMD Ryzen™ 7945HX Processor features the all-new Zen 4 architecture, with a whopping 16
+                cores and AMD’s Precision Boost Overdrive technology, which allows
+                users to overclock and undervolt the processor as they see fit.
+                </p>
+               <a href="http://127.0.0.1:5500/addcart.html"><button class="button button1">Buy </button></a>
+                <a href="http://127.0.0.1:5500/index1.html"><a href="http://127.0.0.1:5500/index1.html"><button class="button button2">Read more</button></a></a>
+        </div>
+        <div class="left">
+            <p style="border: 2px solid palevioletred;background-color: darkorchid;">Laptop</p>
+            <img src="./Image/feature-1.jpg" width="200px" height="150px" style="border: 3px solid black;">
+            <p align="middle">My First JavaScript Animation
+                The AMD Ryzen™ 7945HX Processor features the all-new Zen 4 architecture, with a whopping 16
+                cores and AMD’s Precision Boost Overdrive technology, which allows
+                users to overclock and undervolt the processor as they see fit.
+                </p>
+               <a href="http://127.0.0.1:5500/addcart.html"><button class="button button1">Buy </button></a>
+                <a href="http://127.0.0.1:5500/index1.html"><button class="button button2">Read more</button></a>
+        </div>
+        <div class="left">
+            <p style="border: 2px solid palevioletred; background-color: darkorchid;"> Mobiles </p>
+            <img src="./Image/R.jpg" width="200px" height="150px" style="border: 3px solid black;">
+            <p align="middle">My First JavaScript Animation
+                The AMD Ryzen™ 7945HX Processor features the all-new Zen 4 architecture, with a whopping 16
+                cores and AMD’s Precision Boost Overdrive technology, which allows
+                users to overclock and undervolt the processor as they see fit.
+                </p>
+               <a href="http://127.0.0.1:5500/addcart.html"></a><button class="button button1">Buy </button></a>
+                <a href="http://127.0.0.1:5500/index1.html"><button class="button button2">Read more</button></a>
+        </div>
+        <div class="left">
+            <p style="border: 2px solid palevioletred;background-color: darkorchid;">  Accessories </p>
+            <img src="./Image/fwebp (1).webp" width="200px" height="150px" style="border: 3px solid black;">
+            <p align="middle">My First JavaScript Animation
+                The AMD Ryzen™ 7945HX Processor features the all-new Zen 4 architecture, with a whopping 16
+                cores and AMD’s Precision Boost Overdrive technology, which allows
+                users to overclock and undervolt the processor as they see fit.
+                </p>
+               <a href="http://127.0.0.1:5500/addcart.html"><button class="button button1">Buy </button></a>
+                <button class="button button2">Read more </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Global / English |  ©ASUSTeK Computer  Inc. All rights reserved.Terms of Use NoticePrivacy | Policy
+        <a href="#"><img src="./Image/icons8-pinterest-32.png" width="30px" height="30px"> </a>
+        <a href="#"><img src="./Image/icons8-instagram-50.png" width="30px" height="30px"></a>
+        <a href="#"><img src="./Image/icons8-facebook-50.png" width="30px" height="30px"></a>
+    </p>
+    </div>
+</body>
+</html>

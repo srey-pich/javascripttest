@@ -1,0 +1,199 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+.content{
+        background-color: hwb(60 57% 33%);
+        font-size: 12;
+        height: 610px;
+        display:flex;
+        justify-content: space-between;
+        text-align: center;
+}
+.left{
+        width:30%;
+        height: 580px;
+        border: 1PX solid #ebebed;
+        padding: 20px;
+        line-height: 30px;
+}
+div.gallery {
+        border: 1px solid #ccc;
+}
+div.gallery:hover {
+        border: 1px solid #777;
+}
+div.gallery img {
+        width: 100%;
+        height: auto;
+}
+div.desc {
+        padding: 15px;
+        border: 2px crimson;
+        text-align: center;
+}
+* {
+        box-sizing: border-box;
+}
+.responsive {
+        padding: 0 6px;
+        float: left;
+        width: 20.99999%;
+}
+@media only screen and (max-width: 700px) {
+        .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+        }
+}
+@media only screen and (max-width: 500px) {
+        .responsive {
+                width: 100%;
+        }
+}
+.clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+}
+body{ padding: 20px; font-family: sans-serif; }
+        nav{  height: 35px; background-color: #e9f5e9; padding: 10px; }
+        nav ul{  display: flex; }
+        nav ul li{ list-style-type: none;   }
+        nav ul li a{
+            transition: all ease-in-out 0.5s;
+            letter-spacing: 1px; text-transform: uppercase; margin-right: 3px;
+            text-decoration: none; color: #302b2b; font-size: 12px;
+            background: #dde3dd; padding: 2px 14px; line-height: 30px;
+        }
+        nav ul li a:hover{ color: rgb(0, 195, 255); background-color: black; }
+        nav ul li ul{
+            position: absolute; z-index: 100; display: block;
+            height: 0; overflow: hidden; transition: all ease-in-out 0.5s;
+        }
+        nav ul li:hover ul{
+            height: 150px;
+        }
+        nav ul li ul li{
+            border-bottom: 1px solid #e7eee7;
+        } nav ul li ul li a{
+            width: 200px; display: block; padding: 0 18px; font-size: 12px;}
+ *{box-sizing:0}
+            body {font-family: Verdana, sans-serif; margin:0}
+            .mySlides {display: none}
+             img {vertical-align: middle;}
+            .slideshow-container {
+              max-width: 1000px;
+              position: relative;
+            }
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+            .next {
+              right: 10px;
+              border-radius: 3px 0 0 3px;
+            }
+            .prev:hover, .next:hover {
+              background-color: rgba(0,0,0,0.8);
+            }
+            .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #bbb;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+            
+            .active, .dot:hover {
+              background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .prev, .next,.text {font-size: 11px}
+            }
+.button {
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      
+      .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #4CAF50;
+      }
+      
+      .button1:hover {
+        background-color: #4CAF50;
+        color: white;
+ }
+      
+      .button2 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #008CBA;
+      }
+      .button2:hover {
+        background-color: #008CBA;
+        color: white;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        width: 97%;
+        background-color: #19d0cae4;
+        color: hsl(120, 2%, 12%);
+        text-align: right;
+     }
